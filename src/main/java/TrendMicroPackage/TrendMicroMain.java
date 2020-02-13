@@ -82,7 +82,7 @@ public class TrendMicroMain {
     }
 
 
-    
+
     /**
      * Function that save information stored in static's variables to filename.txt in Files dir
      * @throws IOException
