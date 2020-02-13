@@ -93,7 +93,7 @@ public class TrendMicroMain {
         // write to file
         FileWriter fw = new FileWriter(filePath, false);
         BufferedWriter bw = new BufferedWriter(fw);
-        bw.write("lpt$vpn" + fileName);
+        bw.write("lpt$vpn." + fileName);
         bw.write("\n");
         bw.write(fileSize);
         bw.close();
