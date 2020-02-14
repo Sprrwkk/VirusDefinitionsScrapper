@@ -17,7 +17,7 @@ public class McAfeeMain {
     static String mcAfeeFile;
     static String currentFilePath;
     static String fileSize;
-
+    
     public static void main(String[] args) throws IOException {
 //
         System.out.println("Running script...");
