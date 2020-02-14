@@ -21,7 +21,7 @@ public class SophosMain {
 
         // Create SB object to store file element's
         StringBuilder fileInfo = new StringBuilder();
-        String filePath = "C:\\Users\\lwrobel\\IdeaProjects\\VirusScrapper\\Files\\";
+        String filePath = "Files\\";
 
         // Connect with Sophos latest IDE xml
         doc = Jsoup.connect("https://downloads.sophos.com/downloads/info/latest_IDE.xml").get();
