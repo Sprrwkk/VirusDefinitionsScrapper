@@ -29,7 +29,7 @@ public class TrendMicroMain {
      * @throws IOException
      */
 
-    public static String getFilePathUrl() throws IOException {
+    public static String getTrendMicroFilePath() throws IOException {
 
         Document doc;
 
@@ -56,9 +56,9 @@ public class TrendMicroMain {
 
     public static void downloadZipFile() throws IOException {
 
-        String saveFilePath = "C:\\Users\\lwrobel\\IdeaProjects\\VirusScrapper\\Files\\";
+        String saveFilePath = "Files\\";
         // Create InputSteam object for download file
-        InputStream in = URI.create(getFilePathUrl()).toURL().openStream();
+        InputStream in = URI.create(getTrendMicroFilePath()).toURL().openStream();
 
         // Saved file to Files dir path with replace existing option
         Files.copy(in, Paths.get(saveFilePath + "lpt$vpn" + fileName + ".zip"),
@@ -74,7 +74,7 @@ public class TrendMicroMain {
      */
 
     public static void readFileInfo() throws IOException {
-        ZipFile trendMicroZipFile = new ZipFile("C:\\Users\\lwrobel\\IdeaProjects\\VirusScrapper\\Files\\" +
+        ZipFile trendMicroZipFile = new ZipFile("Files\\" +
                 "lpt$vpn" + fileName + ".zip");
 
         long size = trendMicroZipFile.entries().nextElement().getSize();
@@ -87,8 +87,9 @@ public class TrendMicroMain {
      * Function that save information stored in static's variables to filename.txt in Files dir
      * @throws IOException
      */
+
     public static void saveInfoToFile() throws IOException {
-        File filePath = new File("C:\\Users\\lwrobel\\IdeaProjects\\VirusScrapper\\Files\\" + "lpt$vpn" + fileName + ".txt");
+        File filePath = new File("Files\\" + "lpt$vpn" + fileName + ".txt");
 
         // write to file
         FileWriter fw = new FileWriter(filePath, false);
