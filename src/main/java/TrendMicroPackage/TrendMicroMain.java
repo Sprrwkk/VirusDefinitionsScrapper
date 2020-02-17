@@ -16,7 +16,7 @@ public class TrendMicroMain {
     static String fileName;
     static String fileSize;
 
-    public static void main(String[] args) throws IOException{
+    public static void runningScript() throws IOException{
           downloadZipFile();
           readFileInfo();
           saveInfoToFile();

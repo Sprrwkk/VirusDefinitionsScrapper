@@ -11,7 +11,7 @@ import java.io.*;
 public class SophosMain {
 
 
-    public static void main(String[] args) throws IOException {
+    public static void runningScript() throws IOException {
         writeToFileSophos();
     }
 
