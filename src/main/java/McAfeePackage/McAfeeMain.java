@@ -20,7 +20,7 @@ public class McAfeeMain {
     static String fileSize;
 
 
-    public static void main(String[] args) throws IOException {
+    public static void runningScript() throws IOException {
 //
         System.out.println("Running script...");
         System.out.println("Creating filepath...");
