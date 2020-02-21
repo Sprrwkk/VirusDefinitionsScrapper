@@ -8,3 +8,4 @@ An application used to download virus definitions. Based on the file name, its s
 * Get and writing objects to file
 * Using InputStream for downloading files 
 * Using ZipFile class for read zip files and get interesting to me objects (size, filename)
+* How to connect with database (Ucanaccess and Jackcess)
