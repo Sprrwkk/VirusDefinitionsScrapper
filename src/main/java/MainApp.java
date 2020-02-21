@@ -13,11 +13,11 @@ public class MainApp {
        //McAfeeMain.runningScript();
 //
 //        //TrendMicro Script
-       //TrendMicroMain.runningScript();
+       TrendMicroMain.runningScript();
 //
 //        //Sophos Script
 //        //SophosMain.runningScript();
-        SophosMain.runningScript();
+
 
     }
 
