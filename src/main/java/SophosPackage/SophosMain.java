@@ -56,6 +56,14 @@ public class SophosMain {
     static String sPackageIDSelect = "select MAX(PACKAGE_ID+1) from T_PACKAGES t1 where PACKAGE_ID > 500000 and PACKAGE_ID < 1000000 and not exists (select 1 from T_PACKAGES t2 where t2.PACKAGE_ID=t1.PACKAGE_ID+1)";
 
 
+    // select queries Unix rules
+    static String sRuleIDSelectUNIX =   "select MAX(AUTONUMBER+1) from T_UFPAR_LUT";
+    static String sAuditIDSelectUnix =  "select MIN(AuditID+1) from T_UFPAR_LUT t1 where auditid < 3000000 and auditID > 2000000 and not exists (select 1 from T_UFPAR_LUT t2 where t2.AuditID=t1.AuditID+1)";
+    static String sPackageIDSelectUNIX = "select MAX(PACKAGE_ID+1) from T_PACKAGES t1 where PACKAGE_ID > 2750000 and PACKAGE_ID < 3000000 and not exists (select 1 from T_PACKAGES t2 where t2.PACKAGE_ID=t1.PACKAGE_ID+1)";
+
+
+
+
     // insert string's
     static String insertT_PAR_LUT = "INSERT INTO T_PAR_LUT"
             + "(AUTONUMBER, FILENAME, SIZE, CRC, TRANSLATIONKEY, VERSIONSTRING, LICENSEDEFINITIONFILE, AUDITID, AUTHOR, FILEPATH, FILEDATE) VALUES"
